@@ -522,7 +522,7 @@ window.addEventListener("load", function() {
                                 return t.term
                             }).join(", ");
                             var a = s.title.$t;
-                            createCookie("notiItem", "<li class='noti_item new_post not-seen'><a target='_blank' href='" + r + "'><p class='text-1'>New update for a new girl<p class='text-2'>" + a + "</p><small class='text-3'>Watch now!</small></a></li>"), null == readCookie("notiHTML") && l.prepend(readCookie("notiItem"))
+                            createCookie("notiItem", "<li class='noti_item new_post not-seen'><a  href='" + r + "'><p class='text-1'>New Template Update<p class='text-2'>" + a + "</p><small class='text-3'Check it now!</small></a></li>"), null == readCookie("notiHTML") && l.prepend(readCookie("notiItem"))
                         }
                     }
                 }).done(function() {
