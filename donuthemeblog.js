@@ -522,7 +522,7 @@ window.addEventListener("load", function() {
                                 return t.term
                             }).join(", ");
                             var a = s.title.$t;
-                            createCookie("notiItem", "<li class='noti_item new_post not-seen'><a target='_blank' href='" + r + "'><p class='text-1'>New Template Update<p class='text-2'>" + a + "</p><small class='text-3'>Check It Now!</small></a></li>"), null == readCookie("notiHTML") && l.prepend(readCookie("notiItem"))
+                            createCookie("notiItem", "<li class='noti_item new_post not-seen'><a  href='" + r + "'><p class='text-1'>New Template Update<p class='text-2'>" + a + "</p><small class='text-3'>Check It Now!</small></a></li>"), null == readCookie("notiHTML") && l.prepend(readCookie("notiItem"))
                         }
                     }
                 }).done(function() {
@@ -725,11 +725,11 @@ window.addEventListener("load", function() {
             }
             if (f.match("[fb]")) {
                 var A = f.split(/\[dl\](.*)\[\/dl\]/gi);
-                2 < A.length && $("#bang-thong-tin .lien-ket").append('<a target="_blank" class="link-fb" href="https://mshare.io/file/' + A[1] + '"><i class="fas fa-download"></i></a>')
+                2 < A.length && $("#bang-thong-tin .lien-ket").append('<a  class="link-fb" href="https://mshare.io/file/' + A[1] + '"><i class="fas fa-download"></i></a>')
             }
             if (f.match("[inst]")) {
                 var m = f.split(/\[alb\](.*)\[\/alb\]/gi);
-                2 < m.length && $("#bang-thong-tin .lien-ket").append('<a target="_blank" class="link-inst" href="https://www.facebook.com/' + m[1] + '"><i class="fab fa-facebook-f"></i></a>')
+                2 < m.length && $("#bang-thong-tin .lien-ket").append('<a  class="link-inst" href="https://www.facebook.com/' + m[1] + '"><i class="fab fa-facebook-f"></i></a>')
             }
             if (f.match("[ytb]")) {
                 var v = f.split(/\[ytb\](.*)\[\/ytb\]/gi),
